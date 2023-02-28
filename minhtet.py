@@ -8,12 +8,12 @@ red = ('\033[1;31m')
 
 print('<------------------------------------>')
 bit = platform.architecture()[0]
-if bit=='32bit':
+if bit=='64bit':
     print(f'{red}[•] Join Over Facebook Group {white}')
     os.system('xdg-open https://www.facebook.com/groups/1422983921406005/?ref=share//')
     time.sleep(0.05)
     import trt1
-elif bit=='64bit':
-    import trt64
+elif bit=='32bit':
+    import trt32
 else:
     print(f'{green}[×] Sorry System Not Support{white}')
